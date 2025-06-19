@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CurseEffect
 {
@@ -51,4 +51,8 @@ public class CurseEffect
                 break;
         }
     }
+
+    // ✅ 이름 수정: 클래스와 같은 이름 사용 금지!
+    public float HealthDrainPerSecond =>
+        data.curseType == CurseType.HealthDrain ? data.power : 0f;
 }

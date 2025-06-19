@@ -22,6 +22,7 @@ public class CurseManager : MonoBehaviour
         }
     }
 
+
     public void ApplyCurse(CurseData data)
     {
         CurseEffect newCurse = new CurseEffect(data, stats);
